@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf6;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #f5e8dc;
+  flex-wrap: wrap;
+}
+
+.navbar img {
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #5a4631;
+  font-weight: 500;
+}
+
+.nav-links li a.active {
+  color: #b07a56;
+}
+
+/* Shop Section */
+.shop-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.shop-sub {
+  margin-bottom: 30px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  padding: 16px;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #b07a56;
+  margin: 8px 0;
+  word-wrap: break-word;
+}
+
+.product-card p {
+  color: #5a4631;
+  margin-bottom: 8px;
+}
+
+.product-card button {
+  background-color: #b07a56;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Cart Section */
+.cart-section {
+  padding: 30px 10px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.cart-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cart-item h4 {
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.cart-item button {
+  background: #f7d9c4;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cart-total {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+  }
+
+  .product-card p, .product-card button {
+    font-size: 14px;
+  }
+
+  .cart-item h4 {
+    margin: 5px 0;
+  }
+/* About Section */
+.about-section {
+  padding: 40px 20px;
+  background-color: #fffaf6;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h2, .about-text h3 {
+  color: #b07a56;
+}
+
+.about-text p, .about-text li {
+  color: #5a4631;
+  line-height: 1.6;
+}
+
+.about-text ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text, .about-image {
+    width: 100%;
+  }
+
+  .about-text ul {
+    padding-left: 20px;
+  }
+/* Contact Section */
+.contact-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fffaf6;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-form, .contact-info {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form .btn, .social-links .btn {
+  display: inline-block;
+  background-color: #b07a56;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form .btn:hover, .social-links .btn:hover {
+  background-color: #926443;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px){
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form, .contact-info {
+    width: 100%;
+  }
+
+
+}
